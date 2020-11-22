@@ -103,7 +103,6 @@ export default class VesselList extends Component {
   };
 
   onFleetsLoaded = (data) => {
-    debugger;
     this.setState({
       fleets: data,
       loading: true,
@@ -250,7 +249,6 @@ export default class VesselList extends Component {
 
     let vesselsByFleet = this.state.fleet.vessels;
 
-    debugger;
     let itemsGrid = vesselsByFleet.map((item) => {
       let vesselItem = vessels.Vessels.filter((x) => x._id === item._id);
       let chkName =

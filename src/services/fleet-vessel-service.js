@@ -12,7 +12,6 @@ export default class FleetVesselService {
   };
 
   getFleets = () => {
-    debugger;
     const res = this.getResource(`fleets/`);
     return res.fleets;
   };

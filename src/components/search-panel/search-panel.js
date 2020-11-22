@@ -36,7 +36,6 @@ export default class SearchPanel extends Component {
   search = (e) =>
   {
     e.preventDefault();
-    debugger
     let criteriaName = this.refName.current.value.trim();;      
     this.props.onSearchChangeName(criteriaName);
 
